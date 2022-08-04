@@ -1,0 +1,53 @@
+.bienvenida{
+    margin-top: 15%;
+    display: flex;
+    flex: wrap;
+    justify-content: left;
+    padding-left: 100px;
+
+    &__titulo{
+        font-size: 31px;
+        color: $secondary;
+        padding-top: 100px;
+    }
+
+    &__descripcion{
+        width: 600px;
+        margin-top: 30px;
+        font-size: 20px;
+        padding: 10px;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        color: $secondary;
+    }
+}
+
+
+.botones{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 300px;
+
+    &__servicios{
+        background-color: $primary;
+        text-decoration: none;
+        border-radius: 8px;
+        padding: 20px 15px;
+        display: inline-block;
+    }
+
+    &__contacto{
+
+        background-color: $primary;
+        text-decoration: none;
+        border-radius: 8px;
+        padding: 20px 15px;
+        display: inline-block;
+    }
+}
+
+
+.botones a:hover{
+    color: $tertiary;
+}

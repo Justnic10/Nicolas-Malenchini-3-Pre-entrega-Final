@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-image: url(../../assets/Imagenes/mario-gogh-VBLHICVh-lI-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

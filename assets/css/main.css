@@ -1,0 +1,348 @@
+/* Colores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+::-webkit-scrollbar {
+  display: none; }
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-image: url(../../assets/Imagenes/mario-gogh-VBLHICVh-lI-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.menu {
+  top: 0;
+  margin: 2px;
+  width: 100%;
+  height: 5%;
+  /*25px*/
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .menu__logo {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2px;
+    padding-top: 15px;
+    font-size: 35px;
+    color: white;
+    margin-left: 2%; }
+  .menu__ul {
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+    margin-right: 2%; }
+  .menu__elementos {
+    display: inline;
+    margin: 10px;
+    padding: 20px; }
+  .menu__linea {
+    border-color: orange;
+    width: 100%;
+    margin-top: 10px; }
+
+a:link {
+  text-decoration: none;
+  font-size: 20px;
+  color: white; }
+
+a:visited {
+  color: white;
+  text-decoration: none; }
+
+a:hover {
+  color: orange;
+  text-decoration: underline; }
+
+/*body{
+    background-image: url(../../assets/Imagenes/form-fondo-mediano.jpg)
+}*/
+.footer__datos {
+  display: grid;
+  grid-template-areas: " telefonos direccion mail redes logo_gidema";
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 1fr); }
+
+.footer__elementos {
+  display: flex;
+  background-color: #192939;
+  color: white;
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  justify-content: space-around; }
+
+.footer__linea {
+  border-color: orange;
+  width: 100%;
+  margin-top: 280px; }
+
+.bienvenida {
+  margin-top: 15%;
+  display: flex;
+  flex: wrap;
+  justify-content: left;
+  padding-left: 100px; }
+  .bienvenida__titulo {
+    font-size: 31px;
+    color: white;
+    padding-top: 100px; }
+  .bienvenida__descripcion {
+    width: 600px;
+    margin-top: 30px;
+    font-size: 20px;
+    padding: 10px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: white; }
+
+.botones {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-right: 300px; }
+  .botones__servicios {
+    background-color: orange;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 20px 15px;
+    display: inline-block; }
+  .botones__contacto {
+    background-color: orange;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 20px 15px;
+    display: inline-block; }
+
+.botones a:hover {
+  color: black; }
+
+.nosotros {
+  display: grid;
+  margin-top: 10px;
+  grid-template-areas: " contenedor__imagen contenedor__texto" " contenedor__imagen contenedor__texto";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr); }
+  .nosotros__fondo {
+    background-color: #192939; }
+  .nosotros__imagen {
+    margin: 10px;
+    background-image: url(../../assets/Imagenes/about-us.jpg);
+    width: 95%;
+    height: 800px;
+    background-repeat: no-repeat; }
+    .nosotros__imagen__titulo {
+      font-size: 40px;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      text-decoration: underline orange; }
+  .nosotros__texto {
+    width: 100%;
+    height: 800px;
+    margin-top: 200px;
+    color: white;
+    text-align: center; }
+  .nosotros__gidema {
+    word-spacing: 2px;
+    font-size: 25px;
+    padding: 40px; }
+
+.contenedor__card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: grid;
+  grid-template-areas: " card card card" " card card card";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center; }
+  .contenedor__card__servicios {
+    background-color: #192939; }
+  .contenedor__card figure {
+    position: relative;
+    height: 250px;
+    cursor: pointer;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5); }
+  .contenedor__card figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform; }
+  .contenedor__card figure .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 103, 123, 0.7);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center; }
+  .contenedor__card figure:hover > .capa {
+    opacity: 1;
+    visibility: visible; }
+  .contenedor__card figure:hover > .capa h3 {
+    margin-top: 70px;
+    margin-bottom: 15px; }
+  .contenedor__card figure:hover > img {
+    transform: scale(1.3); }
+  .contenedor__card figure .capa h3 {
+    color: white;
+    font-weight: 400px;
+    margin-bottom: 120px;
+    transition: all 400ms ease-out;
+    margin-top: 30px; }
+  .contenedor__card figure .capa p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto; }
+
+@media screen and (max-width: 800px) {
+  .contenedor__card {
+    grid-template-areas: " card card" " card card" " card card";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); }
+  .footer__datos {
+    font-size: 12px; }
+  .menu__logo {
+    font-size: 15px; }
+  .menu__elementos li {
+    font-size: 10px; }
+  .menu__ul li {
+    font-size: 10px; }
+  li {
+    font-size: 10px; }
+  .menu {
+    font-size: 10px; }
+  a {
+    font-size: 20px; }
+  a:link {
+    font-size: 10px; } }
+
+.container {
+  display: flex; }
+  .container__fondo {
+    background-color: #192939; }
+  .container__titulo {
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 50px;
+    font-size: 25px;
+    padding: 5px;
+    text-decoration: underline blanchedalmond;
+    color: lightblue; }
+  .container__imagen__revista {
+    width: 60%;
+    height: 50%;
+    border-radius: 8px;
+    margin: 100px;
+    text-align: center;
+    border: 4px solid;
+    border-color: orange; }
+  .container__imagen__revista:hover {
+    transform: scale(0.9);
+    transition: all 0.5s ease; }
+  .container__descripcion {
+    width: 80%;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    margin-left: 12%; }
+
+.menu {
+  font-family: Georgia, 'Times New Roman', Times, serif; }
+
+.formulario {
+  margin: auto;
+  padding-top: 50px;
+  color: azure;
+  font-size: 22px;
+  font-weight: bold;
+  width: 90%;
+  max-width: 600px; }
+  .formulario__fondo {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../assets/Imagenes/form-fondo-mediano.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .formulario-control-nombre {
+    border: 5px solid orange; }
+  .formulario-control-apellido {
+    border: 5px solid orange; }
+  .formulario-control-email {
+    border: 5px solid orange; }
+  .formulario-control-mensaje {
+    border: 5px solid orange;
+    height: 150px; }
+
+.boton__enviar {
+  width: 100%;
+  cursor: pointer;
+  color: black;
+  padding: 10px 0; }
+  .boton__enviar__enviar:hover {
+    color: white;
+    text-decoration: underline;
+    background-color: coral; }
+  .boton__enviar__borrar {
+    width: 100%;
+    cursor: pointer;
+    color: black;
+    padding: 10px 0; }
+  .boton__enviar__borrar:hover {
+    color: white;
+    text-decoration: underline;
+    background-color: coral; }
+
+input {
+  width: 100%;
+  font-size: 15px;
+  padding: 10px;
+  border-style: 10px solid;
+  border-color: black;
+  border-radius: 5px; }
+
+textarea {
+  width: 100%;
+  font-size: 15px;
+  padding: 10px;
+  border-style: 10px solid;
+  border-color: black;
+  border-radius: 5px;
+  color: black; }
+
+button[type=submit] {
+  margin: 10px;
+  background-color: orange;
+  font-weight: bold;
+  font-size: 19px; }
+
+button[type=reset] {
+  margin: 10px;
+  background-color: orange;
+  font-weight: bold;
+  font-size: 19px; }
+
+a:link {
+  text-decoration: none;
+  font-size: 20px;
+  color: white; }
+
+ul a:hover {
+  color: orange; }

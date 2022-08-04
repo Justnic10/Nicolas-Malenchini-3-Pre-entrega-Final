@@ -1,0 +1,773 @@
+/*inicio*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-image: url(./Imagenes/mario-gogh-VBLHICVh-lI-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+li{
+    display: inline;
+    margin: 10px;
+    padding: 20px;     
+}
+
+a:link{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: orange;
+    text-decoration: underline;
+}
+
+
+.menu{
+    top: 0;
+    margin: 0;
+    width: 100%;
+    height: 25px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 10px;
+    padding-top: 15px;
+    font-size: 40px;
+    color: white;
+}
+
+
+.menu__ul{
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+}
+
+
+.bienvenida{
+    margin-top: 10%;
+    display: flex;
+    flex: wrap;
+    justify-content: left;
+    padding-left: 100px;
+}
+
+.bienvenida__titulo{
+    font-size: 31px;
+    color: white;
+    padding-top: 100px;
+}
+
+.bienvenida__descripcion{
+    width: 600px;
+    margin-top: 30px;
+    font-size: 20px;
+    padding: 10px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: white;
+}
+
+.botones{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 300px;
+}
+
+.botones__servicios{
+    background-color: orange;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 20px 15px;
+    display: inline-block;
+}
+
+.botones__contacto{
+
+    background-color: orange;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 20px 15px;
+    display: inline-block;
+}
+
+.botones a:hover{
+    color: black;
+}
+
+.linea__nav{
+    border-color: orange;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.linea__footer{
+    border-color: orange;
+    width: 100%;
+    margin-top: 216px;
+}
+
+.datos{
+    display: grid;
+    grid-template-areas: 
+        " telefonos direccion mail redes logo_gidema"
+    ;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.datos__footer{
+    display: flex;
+    background-color:#192939;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    justify-content: space-around;
+}
+
+
+/*nosotros*/
+
+.fondo__nosotros{
+    background-color: #192939;
+}
+
+.nav__nosotros{
+    background-color: #192939;
+}
+
+.contenedor__nosotros{
+    display: grid;
+    grid-template-areas:
+        " imagen__nosotros contenedor__texto"
+        " imagen__nosotros contenedor__texto"
+    ;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.imagen__nosotros{
+    margin: 10px;
+    background-image: url(./Imagenes/about-us.jpg);
+    width: 95%;
+    height: 800px;
+    background-repeat: no-repeat;
+}
+
+.contenedor__texto{
+    width: 100%;
+    height: 800px;
+    color: white;   
+    text-align: center; 
+}
+
+.historia__titulo{
+    font-size: 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-decoration: underline orange;
+}
+
+.historia__gidema{
+    word-spacing: 2px;
+    font-size: 25px;
+    padding: 40px;
+}
+
+.linea__footer__nosotros{
+    border-color: orange;
+    width: 100%;
+    margin-top: 13px;
+}
+
+.datos__nosotros{
+    display: grid;
+    grid-template-areas: 
+        " telefonos direccion mail redes logo_gidema"
+    ;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.datos__nosotros__p{
+    display: flex;
+    background-color:#192939;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    justify-content: space-around;
+}
+
+
+/*servicios*/
+
+.fondo__servicios{
+    background-color: #192939;
+}
+
+.contenedor__card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.contenedor__card figure{
+    position:relative;
+    height: 250px;
+    cursor: pointer;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+}
+.contenedor__card figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform;
+}
+.contenedor__card figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,103,123,0.7);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.contenedor__card figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+.contenedor__card figure:hover > .capa h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+.contenedor__card figure:hover > img{
+    transform: scale(1.3);
+}
+.contenedor__card figure .capa h3{
+    color: #fff;
+    font-weight: 400px;
+    margin-bottom: 120px;
+    transition: all 400ms ease-out;
+    margin-top: 30px;
+}
+.contenedor__card figure .capa p{
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+.contenedor__card{
+    display: grid;
+    grid-template-areas: 
+        " card card card"
+        " card card card"
+    ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.linea__footer__servicios{
+    border-color: orange;
+    width: 100%;
+    margin-top: 31px;
+}
+
+
+
+.datos__servicios{
+    display: grid;
+    grid-template-areas: 
+        " telefonos direccion mail redes logo_gidema"
+    ;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.datos__servicios__p{
+    display: flex;
+    background-color:#192939;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    justify-content: space-around;
+}
+
+
+/*productos*/
+
+.fondo__productos{
+    background-color: #192939;
+}
+
+.container__productos{
+    display: grid;
+    grid-template-areas: 
+        " titulo__productos titulo__productos titulo__productos"
+        " imagen__revista imagen__revista imagen__revista"
+        " descripcion__productos descripcion__productos descripcion__productos"
+    ;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.titulo__productos{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 50px;
+    font-size: 26px;
+    padding: 5px;
+    text-decoration: underline blanchedalmond;
+}
+
+.rmi{
+    color: lightblue;
+}
+
+.rmr{
+    color: lightblue;
+}
+
+.rme{
+    color: lightblue;
+}
+
+.imagen__revista{
+    width: 430px;
+    height: 330px;
+    border-radius: 8px;
+    margin: 100px;
+    text-align: center;
+    border: 4px solid;
+    border-color: orange;
+}
+
+.imagen__revista:hover{
+    transform: scale(0.9);
+    transition: all 0.5s ease;
+}
+
+.descripcion__productos{
+    color: white ;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.linea__footer__productos{
+    border-color: orange;
+    width: 100%;
+    margin-top: 78px;
+}
+
+.datos__productos{
+    display: grid;
+    grid-template-areas: 
+        " telefonos direccion mail redes logo_gidema"
+    ;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.datos__productos__p{
+    display: flex;
+    background-color:#192939;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    justify-content: space-around;
+}
+
+
+/*contacto*/
+
+.fondo__contacto{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/Imagenes/form-fondo-mediano.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container__contacto{
+    margin: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input__group{
+    margin-bottom: 30px;
+}
+
+form{
+    color: azure;
+    font-size: 20px;
+    font-weight: bold;
+    width: 90%;
+    max-width: 600px;
+}
+
+input{
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    border-style: 10px solid;
+    border-color: black;
+    border-radius: 5px;
+}
+
+textarea{
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    border-style: 10px solid;
+    border-color: black;
+    border-radius: 5px;
+    color: black;
+}
+
+button[type=submit]{
+    margin: 10px;
+    background-color: orange; 
+    font-weight: bold;
+    font-size: 19px;   
+}
+
+button[type=reset]{
+    margin: 10px;
+    background-color: orange;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.boton__enviar{
+    width: 100%;
+    cursor: pointer;
+    color: black;
+    padding: 10px 0; 
+}
+
+.boton__enviar:hover{
+    color: white;
+    text-decoration: underline;
+    background-color: coral;
+}
+
+.boton__borrar{
+    width: 100%;
+    cursor: pointer;
+    color: black;
+    padding: 10px 0; 
+}
+
+.boton__borrar:hover{
+    color: white;
+    text-decoration: underline;
+    background-color: coral;
+}
+
+.datos__contacto{
+    display: grid;
+    grid-template-areas: 
+        " telefonos direccion mail redes logo_gidema"
+    ;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+
+.datos__contacto__p{
+    display: flex;
+    background-color:#192939;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    justify-content: space-around;
+    margin-bottom: 0.5px;
+}
+
+.formulario{
+    margin: auto;
+    padding-top: 100px;
+}
+
+
+.linea__footer__contacto{
+    border-color: orange;
+    width: 100%;
+    margin-top: 140px;
+}
+
+.form-control-nombre{
+    border: 5px solid orange;
+}
+
+.form-control-apellido{
+    border: 5px solid orange;
+}
+
+.form-control-email{
+    border: 5px solid orange;
+}
+
+.form-control-mensaje{
+    border: 5px solid orange;
+    height: 150px;
+}
+
+.nav__contacto{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.menu__ul{
+    text-decoration: none;
+}
+
+.menu-contacto{
+    top: 0;
+    margin: 0;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a:link{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+ul a:hover{
+    color: orange;
+}
+
+
+/*Queries servicios*/
+
+@media screen and (max-width: 800px){
+
+    .contenedor__card{
+        grid-template-areas: 
+            " card card"
+            " card card"
+            " card card"
+        ;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .datos__servicios__p{
+        font-size: 12px;  
+    }
+
+    li{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .contenedor__card{
+        grid-template-areas: 
+            " card card"
+            " card card"
+            " card card"
+        ;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 5px;
+    }
+
+    .contenedor__card figure img{
+        height: 250px;
+        width: 350px;
+    }
+
+    .contenedor__card figure .capa h3{
+        font-size: 13px;
+    }
+
+    .contenedor__card figure .capa p{
+        font-size: 11px;
+    }
+
+    .datos__servicios__p{
+        font-size: 9px;  
+    }
+
+        }
+
+
+    /*Queries producto*/
+
+@media screen and (max-width: 800px){
+
+    .container__productos{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .titulo__productos{
+        font-size: 20px;
+    }
+
+    .imagen__revista{
+        width: 450px;
+        height: 350px;
+        margin-left: 150px;
+    }
+    
+    .descripcion__productos{
+        font-size: 13px;
+        padding: 20px;
+    }
+    
+    .datos__productos__p{ 
+        font-size: 12px;
+    }
+
+    .menu{
+        display: inline-block;
+        }
+
+    a:link{
+        font-size: 20px;  
+    }
+
+    .logo{
+        font-size: 25px;
+        padding: 10px;
+        margin-left: 300px;  
+    }
+    }
+
+    @media screen and (max-width: 600px){
+        
+        .logo{
+            font-size: 20px;
+            padding: 10px;
+            margin-left: 250px;  
+        }
+
+        .menu{
+            display: inline-block;
+            }
+
+            a:link{
+                font-size: 13px;
+            }
+
+            .imagen__revista{
+                width: 300px;
+                height: 250px;
+            }
+
+            .datos__productos__p{ 
+                font-size: 9px;
+            }
+    }
+
+    @media screen and (max-width: 1920px){/*
+
+        .imagen__revista{
+            width: 350px;
+            height: 250px;
+            margin-left: 150px;
+        }
+
+        .card__productos__1{
+            display: grid;
+            grid-template-areas: 
+            " titulo__productos rmi "
+            " imagen__revista "
+            " descripcion__productos "
+            ;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3,1fr);
+        }
+*/
+.container__productos{
+    display: flex;
+}
+
+.titulo__productos.rmi{
+    font-size: 20px;
+}
+
+.titulo__productos.rmr{
+    font-size: 20px;
+}
+
+.titulo__productos.rme{
+    font-size: 20px;
+}
+
+.imagen__revista{
+    width: 200px;
+    height: 100px;
+}
+
+.logo{
+    font-size: 30px;
+    padding: 10px;
+    margin-left: 250px;  
+}
+
+.menu{
+    display: inline-block;
+    }
+
+    a:link{
+        font-size: 20px;
+    }
+
+    .datos__productos__p{ 
+        font-size: 15px;
+    }
+
+    .descripcion__productos{
+        font-size: 10px;
+    }
+
+    }

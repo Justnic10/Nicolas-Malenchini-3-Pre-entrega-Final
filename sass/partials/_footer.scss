@@ -1,0 +1,37 @@
+/*body{
+    background-image: url(../../assets/Imagenes/form-fondo-mediano.jpg)
+}*/
+
+
+.footer{
+
+    &__datos{
+        display: grid;
+        grid-template-areas: 
+            " telefonos direccion mail redes logo_gidema"
+        ;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    &__elementos{
+        display: flex;
+        background-color:#192939;
+        color: white;
+        width: 100%;
+        padding: 12px;
+        font-size: 18px;
+        justify-content: space-around;
+    }
+
+    &__linea{
+        border-color: orange;
+        width: 100%;
+        margin-top: 280px;
+    }
+}
+
+
+
+
+
