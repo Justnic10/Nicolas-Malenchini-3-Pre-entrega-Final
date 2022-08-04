@@ -22,19 +22,19 @@
     }
 
     &-control-nombre{
-        border: 5px solid $primary;
+        border: 5px solid map-get($colores , primary);
     }
     
     &-control-apellido{
-        border: 5px solid $primary;
+        border: 5px solid map-get($colores , primary);
     }
     
     &-control-email{
-        border: 5px solid $primary;
+        border: 5px solid map-get($colores , primary);
     }
     
     &-control-mensaje{
-        border: 5px solid $primary;
+        border: 5px solid map-get($colores , primary);
         height: 150px;
     }
 }
@@ -47,7 +47,7 @@
     padding: 10px 0;
 
     &__enviar:hover{
-        color: white;
+        color: map-get($colores , secondary);
         text-decoration: underline;
         background-color: coral;
     }
@@ -55,7 +55,7 @@
     &__borrar{
         width: 100%;
         cursor: pointer;
-        color: black;
+        color: map-get($colores , tertiary);
         padding: 10px 0; 
     }
     
@@ -72,7 +72,7 @@ input{
     font-size: 15px;
     padding: 10px;
     border-style: 10px solid;
-    border-color: $tertiary;
+    border-color: map-get($colores , tertiary);
     border-radius: 5px;
 }
 
@@ -81,21 +81,21 @@ textarea{
     font-size: 15px;
     padding: 10px;
     border-style: 10px solid;
-    border-color: $tertiary;
+    border-color: map-get($colores , tertiary);
     border-radius: 5px;
     color: $tertiary;
 }
 
 button[type=submit]{
     margin: 10px;
-    background-color: $primary; 
+    background-color: map-get($colores , primary); 
     font-weight: bold;
     font-size: 19px;   
 }
 
 button[type=reset]{
     margin: 10px;
-    background-color: $primary;
+    background-color: map-get($colores , primary);
     font-weight: bold;
     font-size: 19px;
 }
@@ -103,9 +103,9 @@ button[type=reset]{
 a:link{
     text-decoration: none;
     font-size: 20px;
-    color: $secondary;
+    color: map-get($colores , secondary);
 }
 
 ul a:hover{
-    color: $primary;
+    color: map-get($colores , primary);
 }

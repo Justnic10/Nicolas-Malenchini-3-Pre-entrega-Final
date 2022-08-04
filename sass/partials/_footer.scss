@@ -17,14 +17,14 @@
     &__elementos{
         @include flex(null, space-around, null);
         background-color:#192939;
-        color: white;
+        color: map-get($colores ,secondary);
         width: 100%;
         padding: 12px;
         font-size: 18px;
     }
 
     &__linea{
-        border-color: orange;
+        border-color: map-get($colores , primary);
         width: 100%;
         margin-top: 280px;
     }

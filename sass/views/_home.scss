@@ -6,7 +6,7 @@
 
     &__titulo{
         font-size: 31px;
-        color: $secondary;
+        color: map-get($colores , secondary);
         padding-top: 100px;
     }
 
@@ -17,7 +17,7 @@
         padding: 10px;
         letter-spacing: 1px;
         word-spacing: 2px;
-        color: $secondary;
+        color: map-get($colores , secondary);
     }
 }
 
@@ -28,7 +28,7 @@
     padding-right: 300px;
 
     &__servicios{
-        background-color: $primary;
+        background-color: map-get($colores , primary);
         text-decoration: none;
         border-radius: 8px;
         padding: 20px 15px;
@@ -37,7 +37,7 @@
 
     &__contacto{
 
-        background-color: $primary;
+        background-color: map-get($colores , primary);
         text-decoration: none;
         border-radius: 8px;
         padding: 20px 15px;
@@ -47,5 +47,5 @@
 
 
 .botones a:hover{
-    color: $tertiary;
+    color: map-get($colores , tertiary);
 }

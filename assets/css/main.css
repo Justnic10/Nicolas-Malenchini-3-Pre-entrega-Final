@@ -1,4 +1,5 @@
 /* Colores */
+/* Maps */
 * {
   margin: 0;
   padding: 0;
@@ -14,15 +15,14 @@ body {
   background-repeat: no-repeat; }
 
 .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   top: 0;
   margin: 2px;
   width: 100%;
   height: 5%;
-  /*25px*/
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  padding: 10px; }
   .menu__logo {
     text-transform: uppercase;
     font-weight: bold;
@@ -69,12 +69,12 @@ a:hover {
 
 .footer__elementos {
   display: flex;
+  justify-content: space-around;
   background-color: #192939;
   color: white;
   width: 100%;
   padding: 12px;
-  font-size: 18px;
-  justify-content: space-around; }
+  font-size: 18px; }
 
 .footer__linea {
   border-color: orange;
@@ -82,10 +82,10 @@ a:hover {
   margin-top: 280px; }
 
 .bienvenida {
-  margin-top: 15%;
   display: flex;
-  flex: wrap;
   justify-content: left;
+  margin-top: 15%;
+  flex: wrap;
   padding-left: 100px; }
   .bienvenida__titulo {
     font-size: 31px;
@@ -101,9 +101,9 @@ a:hover {
     color: white; }
 
 .botones {
-  margin-top: 50px;
   display: flex;
   justify-content: space-evenly;
+  margin-top: 50px;
   padding-right: 300px; }
   .botones__servicios {
     background-color: orange;
@@ -152,17 +152,16 @@ a:hover {
     padding: 40px; }
 
 .contenedor__card {
-  width: 100%;
   display: flex;
+  justify-content: left;
+  width: 100%;
   justify-content: center;
   align-items: center;
   height: 100vh;
   display: grid;
   grid-template-areas: " card card card" " card card card";
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  align-items: center;
-  justify-items: center; }
+  grid-template-rows: repeat(2, 1fr); }
   .contenedor__card__servicios {
     background-color: #192939; }
   .contenedor__card figure {
