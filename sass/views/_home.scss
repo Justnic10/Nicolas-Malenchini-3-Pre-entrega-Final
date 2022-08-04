@@ -1,8 +1,7 @@
 .bienvenida{
+    @include flex(null, left, null);
     margin-top: 15%;
-    display: flex;
     flex: wrap;
-    justify-content: left;
     padding-left: 100px;
 
     &__titulo{
@@ -24,9 +23,8 @@
 
 
 .botones{
+    @include flex(null, space-evenly, null);
     margin-top: 50px;
-    display: flex;
-    justify-content: space-evenly;
     padding-right: 300px;
 
     &__servicios{

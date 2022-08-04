@@ -1,6 +1,6 @@
 .contenedor__card{
+    @include flex(null, left, null);
     width: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -11,8 +11,6 @@
     ;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    align-items: center;
-    justify-items: center;
 
     &__servicios{
         background-color: #192939;
