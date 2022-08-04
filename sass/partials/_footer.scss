@@ -15,13 +15,12 @@
     }
 
     &__elementos{
-        display: flex;
+        @include flex(null, space-around, null);
         background-color:#192939;
         color: white;
         width: 100%;
         padding: 12px;
         font-size: 18px;
-        justify-content: space-around;
     }
 
     &__linea{
