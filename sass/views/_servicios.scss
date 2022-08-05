@@ -1,6 +1,7 @@
 .contenedor__card{
     @include flex(null, left, null);
     width: 100%;
+    margin-left: 5%;
     justify-content: center;
     align-items: center;
     height: 100vh;
