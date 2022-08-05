@@ -239,7 +239,7 @@ a:hover {
   .container__fondo {
     background-color: #192939; }
   .container__titulo {
-    width: 100%;
+    width: 90%;
     text-align: center;
     text-transform: capitalize;
     margin-top: 50px;
