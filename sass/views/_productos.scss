@@ -1,5 +1,9 @@
 .container{
-    display: flex;
+    display: grid;
+    grid-area: 
+    " . . ."
+    ;
+    grid-template-columns: repeat(3,1fr);
 
 
     &__fondo{

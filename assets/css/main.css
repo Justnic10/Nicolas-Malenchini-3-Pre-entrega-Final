@@ -233,7 +233,9 @@ a:hover {
     font-size: 10px; } }
 
 .container {
-  display: flex; }
+  display: grid;
+  grid-area: " . . .";
+  grid-template-columns: repeat(3, 1fr); }
   .container__fondo {
     background-color: #192939; }
   .container__titulo {
