@@ -49,3 +49,57 @@
 .botones a:hover{
     color: map-get($colores , tertiary);
 }
+
+@media screen and(max-width: 600px){
+    .bienvenida{
+        justify-content: center;
+        align-items: center;
+    }   
+    .bienvenida__titulo{
+        font-size: 1.2rem;
+        margin-left: 5px;
+    }
+    .bienvenida__descripcion{
+        font-size: 1rem;
+        margin-right: 100px;
+    }
+    .botones{
+        margin-left: 25%;
+        justify-content: space-between;
+    }
+}
+
+@media screen and(max-width: 879px){
+    .bienvenida{
+        justify-content: center;
+        align-items: center;
+    }   
+    .bienvenida__titulo{
+        font-size: 1.4rem;
+    }
+    .bienvenida__descripcion{
+        font-size: 1rem;
+    }
+    .botones{
+        margin-left: 25%;
+        justify-content: space-between;
+    }
+}
+
+@media screen and(max-width: 1024px){
+    .bienvenida{
+        justify-content: center;
+        align-items: center;
+    }   
+    .bienvenida__titulo{
+        font-size: 1.4rem;
+    }
+    .bienvenida__descripcion{
+        font-size: 1rem;
+        margin-right: 100px;
+    }
+    .botones{
+        margin-left: 25%;
+        justify-content: space-between;
+    }
+}
