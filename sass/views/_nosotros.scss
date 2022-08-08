@@ -21,7 +21,6 @@
     
     
     &__titulo{
-            font-size: 40px;
             margin-top: 100px;
             margin-bottom: 100px;
             text-decoration: underline map-get($colores , primary);
@@ -38,7 +37,7 @@
     
     &__gidema{
         word-spacing: 2px;
-        font-size: 25px;
+        font-size: 1.2rem;
         padding: 40px;
     }
 
@@ -49,8 +48,7 @@
 @media screen and(max-width: 600px){
 
     .nosotros{
-        display: flex;    
-        flex-direction: column;
+        @include flex(column, null, null);
     
 
     &__imagen{
@@ -63,15 +61,14 @@
         font-size: 2.5rem;
     }
     &__gidema{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     }
 }
 
 @media screen and(max-width: 879px){
     .nosotros{
-        display: flex;
-        flex-direction: column;
+        @include flex(column, null, null);
     
 
     &__imagen{
@@ -92,8 +89,8 @@
 
 @media screen and(max-width: 1024px){
     .nosotros{
-        display: flex;
-        flex-direction: column;
+        @include flex(column, null, null);
+        
     
 
     &__imagen{

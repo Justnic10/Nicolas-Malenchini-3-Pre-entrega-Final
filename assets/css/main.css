@@ -156,6 +156,7 @@ a:hover {
 /* Media Queries */
 @media screen and (max-width: 600px) {
   .bienvenida {
+    display: flex;
     justify-content: center;
     align-items: center; }
     .bienvenida__titulo {
@@ -170,6 +171,7 @@ a:hover {
 
 @media screen and (max-width: 879px) {
   .bienvenida {
+    display: flex;
     justify-content: center;
     align-items: center; }
     .bienvenida__titulo {
@@ -182,6 +184,7 @@ a:hover {
 
 @media screen and (max-width: 1024px) {
   .bienvenida {
+    display: flex;
     justify-content: center;
     align-items: center; }
     .bienvenida__titulo {
@@ -208,7 +211,6 @@ a:hover {
     height: 800px;
     background-repeat: no-repeat; }
     .nosotros__imagen__titulo {
-      font-size: 40px;
       margin-top: 100px;
       margin-bottom: 100px;
       text-decoration: underline orange; }
@@ -220,7 +222,7 @@ a:hover {
     text-align: center; }
   .nosotros__gidema {
     word-spacing: 2px;
-    font-size: 25px;
+    font-size: 1.2rem;
     padding: 40px; }
 
 /* Media Queries */
@@ -236,7 +238,7 @@ a:hover {
       padding-top: 0;
       font-size: 2.5rem; }
     .nosotros__gidema {
-      font-size: 1.5rem; } }
+      font-size: 1rem; } }
 
 @media screen and (max-width: 879px) {
   .nosotros {
@@ -329,6 +331,7 @@ a:hover {
 @media screen and (max-width: 600px) {
   .contenedor__card {
     display: flex;
+    flex-direction: column;
     flex-direction: column; }
     .contenedor__card figure img {
       margin-top: 5%;
