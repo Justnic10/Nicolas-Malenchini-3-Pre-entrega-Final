@@ -74,11 +74,11 @@
     }
 }
 
-/*Queries*/
+/*Media Queries*/
 
 @media screen and (max-width: 600px){
     .contenedor__card{
-        display: flex;
+        @include flex(column, null, null);
         flex-direction: column;
 
     
@@ -114,7 +114,7 @@
 }
 
 @media screen and (max-width: 1024px){
-
+    
     .contenedor__card{
         grid-template-areas: 
             " card card"
@@ -125,3 +125,4 @@
         grid-template-rows: repeat(2, 1fr);
     }
 }
+

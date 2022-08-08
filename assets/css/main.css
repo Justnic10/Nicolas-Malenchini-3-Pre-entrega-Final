@@ -58,6 +58,7 @@ a:hover {
   color: orange;
   text-decoration: underline; }
 
+/*Media Queries*/
 @media screen and (max-width: 600px) {
   .menu__logo {
     font-size: 15px; }
@@ -79,9 +80,6 @@ a:hover {
     display: flex;
     font-size: 10px; } }
 
-/*body{
-    background-image: url(../../assets/Imagenes/form-fondo-mediano.jpg)
-}*/
 .footer__datos {
   display: grid;
   grid-template-areas: " telefonos direccion mail redes logo_gidema";
@@ -102,6 +100,7 @@ a:hover {
   width: 100%;
   margin-top: 280px; }
 
+/*Media Queries*/
 @media screen and (max-width: 600px) {
   .footer__elementos {
     font-size: 0.8rem; } }
@@ -154,41 +153,45 @@ a:hover {
 .botones a:hover {
   color: black; }
 
+/* Media Queries */
 @media screen and (max-width: 600px) {
   .bienvenida {
+    display: flex;
     justify-content: center;
     align-items: center; }
-  .bienvenida__titulo {
-    font-size: 1.2rem;
-    margin-left: 5px; }
-  .bienvenida__descripcion {
-    font-size: 1rem;
-    margin-right: 100px; }
+    .bienvenida__titulo {
+      font-size: 1.2rem;
+      margin-left: 5px; }
+    .bienvenida__descripcion {
+      font-size: 1rem;
+      margin-right: 100px; }
   .botones {
     margin-left: 25%;
     justify-content: space-between; } }
 
 @media screen and (max-width: 879px) {
   .bienvenida {
+    display: flex;
     justify-content: center;
     align-items: center; }
-  .bienvenida__titulo {
-    font-size: 1.4rem; }
-  .bienvenida__descripcion {
-    font-size: 1rem; }
+    .bienvenida__titulo {
+      font-size: 1.4rem; }
+    .bienvenida__descripcion {
+      font-size: 1rem; }
   .botones {
     margin-left: 25%;
     justify-content: space-between; } }
 
 @media screen and (max-width: 1024px) {
   .bienvenida {
+    display: flex;
     justify-content: center;
     align-items: center; }
-  .bienvenida__titulo {
-    font-size: 1.4rem; }
-  .bienvenida__descripcion {
-    font-size: 1rem;
-    margin-right: 100px; }
+    .bienvenida__titulo {
+      font-size: 1.4rem; }
+    .bienvenida__descripcion {
+      font-size: 1rem;
+      margin-right: 100px; }
   .botones {
     margin-left: 25%;
     justify-content: space-between; } }
@@ -208,7 +211,6 @@ a:hover {
     height: 800px;
     background-repeat: no-repeat; }
     .nosotros__imagen__titulo {
-      font-size: 40px;
       margin-top: 100px;
       margin-bottom: 100px;
       text-decoration: underline orange; }
@@ -220,9 +222,10 @@ a:hover {
     text-align: center; }
   .nosotros__gidema {
     word-spacing: 2px;
-    font-size: 25px;
+    font-size: 1.2rem;
     padding: 40px; }
 
+/* Media Queries */
 @media screen and (max-width: 600px) {
   .nosotros {
     display: flex;
@@ -235,7 +238,7 @@ a:hover {
       padding-top: 0;
       font-size: 2.5rem; }
     .nosotros__gidema {
-      font-size: 1.5rem; } }
+      font-size: 1rem; } }
 
 @media screen and (max-width: 879px) {
   .nosotros {
@@ -324,10 +327,11 @@ a:hover {
     max-width: 220px;
     margin: auto; }
 
-/*Queries*/
+/*Media Queries*/
 @media screen and (max-width: 600px) {
   .contenedor__card {
     display: flex;
+    flex-direction: column;
     flex-direction: column; }
     .contenedor__card figure img {
       margin-top: 5%;
@@ -384,7 +388,7 @@ a:hover {
     padding: 20px;
     margin-left: 12%; }
 
-/* Queries */
+/* Media Queries */
 @media screen and (max-width: 600px) {
   .container {
     display: flex;
@@ -452,7 +456,6 @@ a:hover {
   .formulario__fondo {
     width: 100%;
     height: 100%;
-    /*background-image: url(../../assets/Imagenes/form-fondo-mediano.jpg);*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; }
