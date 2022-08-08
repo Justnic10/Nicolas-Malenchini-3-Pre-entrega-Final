@@ -54,3 +54,34 @@ a:hover{
 }
 
 
+@media screen and(max-width: 600px){
+    .menu__logo{
+        font-size: 15px;
+    }
+    .menu__ul{
+        display: flex;
+        font-size: 10px;
+    }
+}
+
+@media screen and(max-width: 769px){
+    .menu__logo{
+        font-size: 20px;
+    }
+
+    .menu__ul{
+        display: flex;
+        font-size: 10px;
+    }
+}
+
+@media screen and(max-width: 879px){
+    .menu__logo{
+        font-size: 20px;
+    }
+
+    .menu__ul{
+        display: flex;
+        font-size: 10px;
+    }
+}
