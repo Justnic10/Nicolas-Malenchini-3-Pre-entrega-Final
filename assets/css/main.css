@@ -384,6 +384,60 @@ a:hover {
     padding: 20px;
     margin-left: 12%; }
 
+/* Queries */
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .container__cards {
+      justify-content: center;
+      align-items: center; }
+    .container__titulo {
+      font-size: 1.1rem; }
+    .container__imagen__revista {
+      height: 250px;
+      width: 300px; }
+    .container__descripcion {
+      font-size: 1rem; } }
+
+@media screen and (max-width: 879px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .container__cards {
+      justify-content: center;
+      align-items: center; }
+    .container__titulo {
+      font-size: 1.5rem;
+      width: 100%; }
+    .container__imagen__revista {
+      height: 80%;
+      width: 80%; }
+    .container__descripcion {
+      font-size: 1.2rem; } }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .container__cards {
+      justify-content: center;
+      align-items: center; }
+    .container__titulo {
+      font-size: 1.5rem;
+      width: 100%; }
+    .container__imagen__revista {
+      height: 80%;
+      width: 80%; }
+    .container__descripcion {
+      font-size: 1.2rem; } }
+
 .menu {
   font-family: Georgia, 'Times New Roman', Times, serif; }
 
