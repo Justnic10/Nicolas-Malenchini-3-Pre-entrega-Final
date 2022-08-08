@@ -1,11 +1,5 @@
 .container{
-    display: grid;
-    grid-area: 
-    " . . ."
-    ;
-    grid-template-columns: repeat(3,1fr);
-
-
+    
     &__fondo{
         background-color: #192939;
     }
@@ -22,7 +16,7 @@
 }
 
     &__imagen__revista{
-        width:  60%;
+        width:  70%;
         height: 50%;
         border-radius: 8px;
         margin: 100px;
