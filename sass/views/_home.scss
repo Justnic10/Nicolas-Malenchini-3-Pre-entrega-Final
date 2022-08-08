@@ -47,8 +47,9 @@
 
 
 .botones a:hover{
-    color: map-get($colores , tertiary);
+    color: map-get($colores , secondary);
 }
+
 
 /* Media Queries */
 
