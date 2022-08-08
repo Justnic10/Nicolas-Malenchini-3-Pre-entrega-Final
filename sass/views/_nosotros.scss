@@ -44,8 +44,34 @@
 
 }
 
+@media screen and(max-width: 600px){
+    .nosotros{
+        display: flex;    
+        flex-direction: column;
+    }
+
+    .nosotros__imagen{
+        height: 500px;
+        background-size: cover;
+        background-repeat: no-repeat;  
+    }
+    .nosotros__titulo{
+        padding-top: 0;
+        font-size: 2.5rem;
+    }
+    .nosotros__gidema{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and(max-width: 879px){
+
+}
 
 
-
-
+@media screen and(max-width: 1024px){
+    .nosotros__imagen{
+        
+    }
+}
 
