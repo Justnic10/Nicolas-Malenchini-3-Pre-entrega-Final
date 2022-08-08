@@ -154,16 +154,17 @@ a:hover {
 .botones a:hover {
   color: black; }
 
+/* Media Queries */
 @media screen and (max-width: 600px) {
   .bienvenida {
     justify-content: center;
     align-items: center; }
-  .bienvenida__titulo {
-    font-size: 1.2rem;
-    margin-left: 5px; }
-  .bienvenida__descripcion {
-    font-size: 1rem;
-    margin-right: 100px; }
+    .bienvenida__titulo {
+      font-size: 1.2rem;
+      margin-left: 5px; }
+    .bienvenida__descripcion {
+      font-size: 1rem;
+      margin-right: 100px; }
   .botones {
     margin-left: 25%;
     justify-content: space-between; } }
@@ -172,10 +173,10 @@ a:hover {
   .bienvenida {
     justify-content: center;
     align-items: center; }
-  .bienvenida__titulo {
-    font-size: 1.4rem; }
-  .bienvenida__descripcion {
-    font-size: 1rem; }
+    .bienvenida__titulo {
+      font-size: 1.4rem; }
+    .bienvenida__descripcion {
+      font-size: 1rem; }
   .botones {
     margin-left: 25%;
     justify-content: space-between; } }
@@ -184,11 +185,11 @@ a:hover {
   .bienvenida {
     justify-content: center;
     align-items: center; }
-  .bienvenida__titulo {
-    font-size: 1.4rem; }
-  .bienvenida__descripcion {
-    font-size: 1rem;
-    margin-right: 100px; }
+    .bienvenida__titulo {
+      font-size: 1.4rem; }
+    .bienvenida__descripcion {
+      font-size: 1rem;
+      margin-right: 100px; }
   .botones {
     margin-left: 25%;
     justify-content: space-between; } }
@@ -223,6 +224,7 @@ a:hover {
     font-size: 25px;
     padding: 40px; }
 
+/* Media Queries */
 @media screen and (max-width: 600px) {
   .nosotros {
     display: flex;
@@ -324,7 +326,7 @@ a:hover {
     max-width: 220px;
     margin: auto; }
 
-/*Queries*/
+/*Media Queries*/
 @media screen and (max-width: 600px) {
   .contenedor__card {
     display: flex;
@@ -384,7 +386,7 @@ a:hover {
     padding: 20px;
     margin-left: 12%; }
 
-/* Queries */
+/* Media Queries */
 @media screen and (max-width: 600px) {
   .container {
     display: flex;
@@ -452,7 +454,6 @@ a:hover {
   .formulario__fondo {
     width: 100%;
     height: 100%;
-    /*background-image: url(../../assets/Imagenes/form-fondo-mediano.jpg);*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; }
