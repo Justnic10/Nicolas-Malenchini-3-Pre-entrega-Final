@@ -2,12 +2,12 @@
 
 .formulario{
     margin: auto;
-    padding-top: 50px;
+    margin-top: 5%;
     color: azure;
     font-size: 22px;
     font-weight: bold;
-    width: 90%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 650px;
     
 
     &__fondo{
@@ -20,46 +20,38 @@
 
     &-control-nombre{
         border: 5px solid map-get($colores , primary);
+        margin-bottom: 5%;
     }
     
     &-control-apellido{
         border: 5px solid map-get($colores , primary);
+        margin-bottom: 5%;
     }
     
     &-control-email{
         border: 5px solid map-get($colores , primary);
+        margin-bottom: 5%;
     }
     
     &-control-mensaje{
         border: 5px solid map-get($colores , primary);
         height: 150px;
+        padding: 20%;
     }
 }
 
-
-.boton__enviar{
-    width: 100%;
+button{
+    width: 30%;
     cursor: pointer;
     color: $tertiary;
-    padding: 10px 0;
+    padding: 2%;
+    background-color: map-get($colores , primary);
 
-    &__enviar:hover{
+    &:hover{
         color: map-get($colores , secondary);
         text-decoration: underline;
         background-color: coral;
-    }
-    
-    &__borrar{
-        width: 100%;
         cursor: pointer;
-        color: map-get($colores , tertiary);
-        padding: 10px 0; 
-    }
-    
-    &__borrar:hover{
-        color: $secondary;
-        text-decoration: underline;
-        background-color: coral;
     }
 }
 
@@ -85,21 +77,19 @@ textarea{
 
 button[type=submit]{
     margin: 10px;
-    background-color: map-get($colores , primary); 
     font-weight: bold;
-    font-size: 19px;   
+    font-size: 19px; 
+    margin-top: 5%;
 }
 
 button[type=reset]{
     margin: 10px;
-    background-color: map-get($colores , primary);
     font-weight: bold;
     font-size: 19px;
 }
 
 a:link{
     text-decoration: none;
-    font-size: 20px;
     color: map-get($colores , secondary);
 }
 
