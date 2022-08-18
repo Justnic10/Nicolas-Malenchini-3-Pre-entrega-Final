@@ -55,7 +55,8 @@ nav a:hover,
 nav a:focus {
     color: white;
     }
-
+    
+/* Media Queries */
 
     @media (max-width: 600px) {
         .container {
@@ -94,6 +95,24 @@ nav a:focus {
 }
 
 @media (max-width: 1020px){
+    .container {
+        text-align: center;
+            }
+    
+            .container-nav {
+        flex-direction: column;
+            }
+    
+            nav ul {
+            flex-direction: column;
+            }
+    
+            nav li {
+            margin: 0.8em 0;
+            }
+}
+
+@media (max-width: 1350px){
     .container {
         text-align: center;
             }

@@ -97,3 +97,10 @@ ul a:hover{
     color: map-get($colores , primary);
 }
 
+/* Media Queries */
+
+@media screen and(max-width: 600px){
+    .formulario{
+        font-size: 0.8rem;
+    }
+}

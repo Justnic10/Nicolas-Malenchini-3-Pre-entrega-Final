@@ -31,11 +31,19 @@
     .footer__elementos{
         font-size: 0.8rem;
     }
+    .footer__datos{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media screen and(max-width: 769px){
     .footer__elementos{
         font-size: 0.8rem;
+    }
+    .footer__datos{
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -43,7 +51,20 @@
     .footer__elementos{
         font-size: 0.8rem;
     }
+    .footer__datos{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
+@media (max-width: 1020px){
+    .footer__elementos{
+        font-size: 0.8rem;
+    }
+    .footer__datos{
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 

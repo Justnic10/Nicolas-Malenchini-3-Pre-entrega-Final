@@ -60,6 +60,7 @@ nav a:hover,
 nav a:focus {
   color: white; }
 
+/* Media Queries */
 @media (max-width: 600px) {
   .container {
     text-align: center; }
@@ -81,6 +82,16 @@ nav a:focus {
     margin: 0.8em 0; } }
 
 @media (max-width: 1020px) {
+  .container {
+    text-align: center; }
+  .container-nav {
+    flex-direction: column; }
+  nav ul {
+    flex-direction: column; }
+  nav li {
+    margin: 0.8em 0; } }
+
+@media (max-width: 1350px) {
   .container {
     text-align: center; }
   .container-nav {
@@ -113,15 +124,31 @@ nav a:focus {
 /*Media Queries*/
 @media screen and (max-width: 600px) {
   .footer__elementos {
-    font-size: 0.8rem; } }
+    font-size: 0.8rem; }
+  .footer__datos {
+    display: flex;
+    flex-direction: column; } }
 
 @media screen and (max-width: 769px) {
   .footer__elementos {
-    font-size: 0.8rem; } }
+    font-size: 0.8rem; }
+  .footer__datos {
+    display: flex;
+    flex-direction: column; } }
 
 @media screen and (max-width: 879px) {
   .footer__elementos {
-    font-size: 0.8rem; } }
+    font-size: 0.8rem; }
+  .footer__datos {
+    display: flex;
+    flex-direction: column; } }
+
+@media (max-width: 1020px) {
+  .footer__elementos {
+    font-size: 0.8rem; }
+  .footer__datos {
+    display: flex;
+    flex-direction: column; } }
 
 .bienvenida {
   display: flex;
@@ -531,3 +558,8 @@ a:link {
 
 ul a:hover {
   color: orange; }
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  .formulario {
+    font-size: 0.8rem; } }
